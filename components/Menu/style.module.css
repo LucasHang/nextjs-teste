@@ -1,0 +1,141 @@
+nav.menu{
+    z-index: 10;
+
+    height: 100%;
+    width: 220px;
+
+    padding: 0px 10px;
+    margin-right: 36px;
+
+    transition: width 0.4s;
+}
+
+nav.menu .my-btn{
+    display: grid;
+    place-items: center;
+    margin-bottom: 4px;
+}
+
+nav.menu .my-btn:hover{
+    background-color: #0070f3;
+    color: #fff;
+}
+
+nav.menu .my-btn svg{
+    transform: rotate(0deg);
+
+    transition: transform 0.4s;
+}
+
+nav.menu ul{
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+
+    margin: 0;
+    padding: 0;
+}
+
+nav.menu ul li{
+    width: 220px;
+    height: 46px;
+
+    display: flex;
+
+    cursor: pointer;
+
+    margin-bottom: 4px;
+
+    transition: width 0.4s;
+}
+
+nav.menu ul li:hover{
+    width: 220px !important;
+
+    transition: width 0.4s;
+}
+
+nav.menu ul li .menu-item{
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+
+    background-color: #fff;
+
+    border: 1px solid #0070f3;
+    border-radius: 0 8px 8px 0;
+
+    font-size: 1.2rem;
+    font-weight: 600;
+
+    padding: 4px 6px;
+    padding-left: 8px;
+
+    transition: padding-left 0.3s, background-color 0.4s;
+}
+
+nav.menu ul li .menu-item span{
+    width: 100%;
+
+    opacity: 1;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+    margin-left: 6px;
+
+    transition: width 0.4s, opacity 0.4s, margin-left 0.4s;
+}
+
+nav.menu ul li .menu-item:hover{
+    background-color: aliceblue;
+    font-weight: 700;
+    padding-left: 8px !important;
+
+    transition: padding-left 0.3s;
+}
+
+nav.menu ul li .menu-item:hover span{
+    width: 100% !important;
+    opacity: 1 !important;
+    margin-left: 6px !important;
+
+    transition: all 0.4s;
+}
+
+/*** quando short ***/
+
+nav.menu.short{
+    width: 52px;
+
+    transition: width 0.4s;
+}
+
+nav.menu.short .my-btn svg{
+    transform: rotate(180deg);
+
+    transition: transform 0.4s;
+}
+
+nav.menu.short ul li{
+    width: 52px;
+
+    transition: width 0.4s;
+}
+
+nav.menu.short ul li .menu-item{
+    padding-left: 14px;
+
+    transition: padding-left 0.3s;
+}
+
+nav.menu.short ul li .menu-item span{
+    width: 0;
+    opacity: 0;
+    margin-left: 0;
+
+    transition: all 0.4s;
+}
