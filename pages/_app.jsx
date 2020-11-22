@@ -1,5 +1,7 @@
 //import 'bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
+//import 'bootstrap/dist/css/bootstrap.min.css';
+
+import '../styles/tailwind.css';
 
 import '../styles/global.css';
 
